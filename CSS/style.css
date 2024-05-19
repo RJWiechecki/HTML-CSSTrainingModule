@@ -274,6 +274,11 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
