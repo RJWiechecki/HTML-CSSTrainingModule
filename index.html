@@ -14,24 +14,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
-          nisi.
-        </p>
-      </header>
-    </section>
-    <section class="block block--dark block--skewed-left">
-      <div class="container">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
-          nisi.
-        </p>
-      </div>
-    </section>
+    <nav class="nav collapsible">
+      <a href="/"><img class="nav__brand" src="images/logo.png" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a class="nav__anchor" href="#">Hosting</a></li>
+        <li class="nav__item"><a class="nav__anchor" href="#">VPS</a></li>
+        <li class="nav__item"><a class="nav__anchor" href="#">Domain</a></li>
+        <li class="nav__item"><a class="nav__anchor" href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="code/main.js"></script>
+    <script src="code/toggle.js"></script>
   </body>
 </html>
