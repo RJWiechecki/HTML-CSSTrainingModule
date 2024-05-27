@@ -158,7 +158,6 @@ a {
 }
 
 /* icons */
-
 .icon {
   width: 40px;
   height: 40px;
@@ -180,7 +179,7 @@ a {
 }
 
 .icon-container {
-  background-color: gold;
+  background-color: #f3f9f9;
   width: 64px;
   height: 64px;
   border-radius: 100%;
@@ -261,8 +260,7 @@ a {
 /* button displays */
 .btn--block {
   width: 100%;
-  display: block;
-  justify-self: center;
+  display: inline-block;
 }
 
 @media screen and (min-width: 1024px) {
@@ -781,4 +779,43 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Features */
+.feature {
+  display: grid;
+  gap: 4rem 2rem;
+  grid-template-columns: 1fr;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+/* Media Query for larger screens */
+@media screen and (min-width: 768px) {
+  .feature {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature:nth-of-type(even) {
+    grid-template-areas: "image content";
+  }
+
+  .feature:nth-of-type(even) .feature__content {
+    grid-area: content;
+  }
+
+  .feature:nth-of-type(even) .feature__image {
+    grid-area: image;
+  }
 }
