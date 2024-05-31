@@ -529,8 +529,14 @@ a {
 
 /* Callouts */
 .callout {
-  padding: 4rem;
+  padding: 4%;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .callout {
+    padding: 0;
+  }
 }
 
 .callout--primary {
